@@ -1,0 +1,35 @@
+<%- include('_header.ejs') -%>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>output</title>
+</head>
+
+<body>
+    <div>
+        <table class="table table-hover" style="margin-left: auto; margin-right: auto;">
+            <thead class="thead-dark">
+                <tr>
+                  
+                    <th scope="col">Exercise</th>
+                    <th scope="col">Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(var i=0; i<result.length; i++) { %>
+                <tr>
+                   
+                    <td><%=result[i].Recode.excode %></td>
+
+                    <td><%=result[i].Timestamp %></td>
+                </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
