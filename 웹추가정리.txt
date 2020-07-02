@@ -1,0 +1,21 @@
+기존 route -- main get --  res.render("main", { username: req.user.username });
+변경 output get의 소스를 복붙, 
+ var obj = JSON.parse(result);   
+ 맨 아래 줄만 아래 코드로 변경
+ res.render("main", {result:result}); 
+
+기존 route -- main post --  
+var name = new Ex()  // teamate User()
+name = req.body.ex
+const walletPath = path.join(process.cwd(), 'wallet');
+   ~~~~~
+await gateway.disconnect();
+res.status(200).send('Transaction has been submitted'); 를
+변경 
+console.log("New contact Created")
+req.flash("New contact Created")
+return res.redirect('/main')
+
+main[output]
+ <td><%=result[i].Recode.excode %></td>
+ <td><%=result[i].Timestamp %></td> 
